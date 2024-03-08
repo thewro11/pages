@@ -2,6 +2,9 @@
 const nextConfig = {
   output: "export",
   basePath: "/pages",
+  experimental: {
+
+  },
 };
 
 export default nextConfig;
