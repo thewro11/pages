@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <main className="mx-auto w-[60vw]">
       <div className="flex mx-auto py-12 space-y-6 mt-32 mb-12 bg-[#1A1040] shadow-lg rounded-3xl justify-center space-x-8">
-          <img src="https://avatars.githubusercontent.com/u/31770710" className="h-[8vw] rounded-full border"></img>
+          <Image alt="thewro11 profile image" src="https://avatars.githubusercontent.com/u/31770710" className="h-[8vw] rounded-full border" />
           <div className="flex flex-col justify-center font-bold">
             <span className="text-[3vw] uppercase">Thiti Thaweesin</span>
             <span className="text-[1.5vw] text-center uppercase">Théo</span>
