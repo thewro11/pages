@@ -4,4 +4,4 @@ const nextConfig = {
   basePath: "/pages",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
