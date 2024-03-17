@@ -85,7 +85,7 @@ export default function Svv2024() {
               <li className="font-bold text-purple-700">DIMENSION LOCKED</li>
               <li>To make the game not progressing so fast for everyone, I decided to lock <span className="font-semibold text-red-600">The Nether</span> and <span className="font-semibold text-purple-900">The End</span>, so that players can focus on having fun exploring the Overworld rather than raging to the end of the game.</li>
               <li>→ <span className="font-semibold text-red-600">The Nether</span> is locked for <span className="font-semibold">ONE WEEK</span> after the server starts.</li>
-              <li>→ <span className="font-semibold text-purple-900">The End</span> is locked <span className="font-semibold">until later players' discussion</span>. While The End is locked, players will not be able to craft <b>The Eye of Ender</b> and the crafting recipe for <b>Ender Chest</b> are changed (see more at Datapack Section below).</li>
+              <li>→ <span className="font-semibold text-purple-900">The End</span> is locked <span className="font-semibold">until later players&apos; discussion</span>. While The End is locked, players will not be able to craft <b>The Eye of Ender</b> and the crafting recipe for <b>Ender Chest</b> are changed (see more at Datapack Section below).</li>
             </ul>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Svv2024() {
         <div className="text-black px-12 py-12 mx-auto w-[50vw] bg-white rounded-2xl shadow-lg">
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Server Datapacks</p>
           <ul>
-            <li>- Théo's Survival+ (additional block of ore smelting)</li>
+            <li>- Théo&apos;s Survival+ (additional block of ore smelting)</li>
             <li>- Armor Statues</li>
             <li>- Cauldron Concrete</li>
             <li>- Compass Coordinates</li>
