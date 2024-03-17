@@ -1,0 +1,68 @@
+[
+  {
+    "displayName": "Dark Blue",
+    "codeName": "dark_blue",
+    "hexName": "#0000AA"
+  },
+  {
+    "displayName": "Dark Green",
+    "codeName": "dark_green",
+    "hexName": "#00AA00"
+  },
+  {
+    "displayName": "Dark Aqua",
+    "codeName": "dark_aqua",
+    "hexName": "#00AAAA"
+  },
+  {
+    "displayName": "Dark Red",
+    "codeName": "dark_red",
+    "hexName": "#AA0000"
+  },
+  {
+    "displayName": "Dark Purple",
+    "codeName": "dark_purple",
+    "hexName": "#AA00AA"
+  },
+  {
+    "displayName": "Light Purple",
+    "codeName": "light_purple",
+    "hexName": "#FF55FF"
+  },
+  {
+    "displayName": "Gold",
+    "codeName": "gold",
+    "hexName": "#FFAA00"
+  },
+  {
+    "displayName": "Blue",
+    "codeName": "blue",
+    "hexName": "#5555FF"
+  },
+  {
+    "displayName": "Green",
+    "codeName": "green",
+    "hexName": "#55FF55"
+  },
+  {
+    "displayName": "Aqua",
+    "codeName": "aqua",
+    "hexName": "#55FFFF"
+  },
+  {
+    "displayName": "Red",
+    "codeName": "red",
+    "hexName": "#FF5555"
+  },
+  {
+    "displayName": "Yellow",
+    "codeName": "yellow",
+    "hexName": "#FFFF55"
+  },
+  {
+    "displayName": "White",
+    "codeName": "white",
+    "hexName": "#FFFFFF"
+  }
+  
+]
