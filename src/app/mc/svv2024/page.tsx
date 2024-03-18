@@ -46,7 +46,7 @@ export default function Svv2024() {
     <main className="pt-24 pb-24">
       <div className="top-0 fixed py-3 px-8 w-full text-sm rounded-lg bg-[#1A1040]" style={{display: isRegistrationOpening ? "flex" : "none"}} role="alert">
         <span className="grow items-center inline-flex">
-          Minecraft Survival 2024 is now recruiting members!&nbsp;<span className="font-semibold">Register now!</span>
+          Minecraft Survival 2024 is now recruiting members! Register now!
         </span>
         <button 
           type="button" 
@@ -60,14 +60,14 @@ export default function Svv2024() {
       </div>
 
       <div className="space-y-20">
-        <div className="text-black px-12 py-12 mx-auto w-[50vw] bg-white rounded-2xl shadow-lg">
+        <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[35rem] bg-white rounded-2xl shadow-lg">
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Minecraft Survival 2024</p>
-          <p className="text-6xl font-semibold uppercase my-16 text-center align-middle">COMING SOON</p>
+          <p className="text-3xl md:text-6xl font-semibold uppercase my-16 text-center align-middle">COMING SOON</p>
         </div>
 
-        <div className="text-black px-12 py-12 mx-auto w-[50vw] bg-white rounded-2xl shadow-lg">
+        <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg">
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-6 text-center">Server information</p>
-          <div className="space-y-8">
+          <div className="space-y-8 text-sm md:text-md">
             <ul className="font-light space-y-3 text-justify">
               <li className="font-bold text-purple-700">SERVER RULE</li>
               <li>→ Actually, there are no rules in this server. But I would like everyone to <span className="font-bold">respect each others and not harassing other players</span>.</li>
@@ -90,9 +90,9 @@ export default function Svv2024() {
           </div>
         </div>
 
-        <div className="text-black px-12 py-12 mx-auto w-[50vw] bg-white rounded-2xl shadow-lg">
+        <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg">
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Server Datapacks</p>
-          <ul>
+          <ul className="text-sm md:text-md">
             <li>- Théo&apos;s Survival+ (additional block of ore smelting)</li>
             <li>- Armor Statues</li>
             <li>- Cauldron Concrete</li>
@@ -116,7 +116,7 @@ export default function Svv2024() {
           </ul>
         </div>
 
-        <div className="text-black px-12 py-12 mx-auto w-[50vw] bg-white rounded-2xl shadow-lg" style={{display: isRegistrationOpening ? "block" : "none"}}>
+        <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg" style={{display: isRegistrationOpening ? "block" : "none"}}>
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Registered Players</p>
           <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
