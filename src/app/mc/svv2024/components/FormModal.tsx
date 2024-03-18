@@ -21,6 +21,7 @@ export default function FormModal(formModalProps: {
   const minDate = new Date(2024, 5, 8);
   const maxDate = new Date(2024, 5, 30);
 
+  const [nickname, setNickname] = useState("");
   const [username, setUsername] = useState("");
   const [color, setColor] = useState("");
   const [prefix, setPrefix] = useState("");
@@ -45,6 +46,9 @@ export default function FormModal(formModalProps: {
     setOpenErrorModal(false);
   }
   
+  const onNicknameChange = (value: string) => {
+    setNickname(value);
+  }
   const onUsernameChange = (value: string) => {
     setUsername(value);
   };
@@ -61,6 +65,11 @@ export default function FormModal(formModalProps: {
   const onSubmit = async (force?: boolean) => {
     setShowingAlert(false);
 
+    if (!nickname) {
+      setAlert("Please enter your nickname.");
+      setShowingAlert(true);
+      return;
+    }
     if (!username) {
       setAlert("Please specify your Minecraft username.");
       setShowingAlert(true);
@@ -83,6 +92,7 @@ export default function FormModal(formModalProps: {
     }
 
     const form: Form = {
+      nickname: nickname,
       username: username,
       color: color,
       prefix: prefix,
@@ -146,6 +156,11 @@ export default function FormModal(formModalProps: {
 
         <ModalBody>
           <form className="max-w-sm mx-auto space-y-5">
+            <div>
+              <Label id="nickname" required>Your Nickname</Label>
+              <TextInput id="nickname" data={nickname} onInputChange={onNicknameChange}></TextInput>
+            </div>
+
             <div>
               <Label id="username" required>Minecraft Username</Label>
               <TextInput id="username" data={username} onInputChange={onUsernameChange}></TextInput>
