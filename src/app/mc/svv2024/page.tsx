@@ -70,50 +70,180 @@ export default function Svv2024() {
           <div className="space-y-8 text-sm md:text-md">
             <ul className="font-light space-y-3 text-justify">
               <li className="font-bold text-purple-700">SERVER RULE</li>
-              <li>→ Actually, there are no rules in this server. But I would like everyone to <span className="font-bold">respect each others and not harassing other players</span>.</li>
-              <li>→ Violation only results in <span className="font-bold">PERMANENT BAN</span>.</li>
+              <li>→ Actually, there are no rules in this server. But I would like everyone to <span className="text-purple-700">respect each others and not harassing other players</span>.</li>
+              <li>→ Violation only results in <span className="text-purple-700 underline">PERMANENT BAN</span>.</li>
             </ul>
             <ul className="font-light space-y-3 text-justify">
               <li className="font-bold text-purple-700">GENERAL INFO</li>
-              <li>→ Only registered players can join this server. Players who want to join after the server starts have to individually contact Théo and will be marked as GUEST.</li>
-              <li>→ This server is <span className="font-semibold">vanilla</span>; there are no mods and resource packs required to play this server. You can install any client mods or resource packs that enchance your gaming experiences, <span className="font-semibold">EXCEPT CHEATING MODS</span>.</li>
-              <li>→ Server difficulty of this server is <span className="font-semibold">hard</span>. But it is not hard enough (trust me! 👌), so I decided to modify the difficulty by using datapacks (see more at Datapack Section below).</li>
-              <li>→ This server has <span className="font-semibold">friendly fire enabled</span>, so you could be able to poke your friends for fun 👀.</li>
+              <li>→ Only registered players can join this server. Players who want to join after the server starts have to individually contact Théo and will be marked as guest.</li>
+              <li>→ This server is <span className="text-purple-700">vanilla</span>; there are no mods and resource packs required to play this server. You can install any client mods or resource packs that enhance your gaming experiences, <span className="text-purple-700">except cheating mods</span>.</li>
+              <li>→ Server difficulty of this server is <span className="text-purple-700">hard</span>. But it is not hard enough (trust me! 👌), so I decided to modify the difficulty by using datapacks (see more at Datapack Section below).</li>
+              <li>→ This server has <span className="text-purple-700">friendly fire enabled</span>, so you could be able to poke your friends for fun 👀.</li>
               <li>→ Players cannot travel further than ±5000 blocks in x and z axis. This will be increased later if players have already explored major of the available area.</li>
             </ul>
             <ul className="font-light space-y-3 text-justify">
               <li className="font-bold text-purple-700">DIMENSION LOCKED</li>
               <li>To make the game not progressing so fast for everyone, I decided to lock <span className="font-semibold text-red-600">The Nether</span> and <span className="font-semibold text-purple-900">The End</span>, so that players can focus on having fun exploring the Overworld rather than raging to the end of the game.</li>
-              <li>→ <span className="font-semibold text-red-600">The Nether</span> is locked for <span className="font-semibold">ONE WEEK</span> after the server starts.</li>
-              <li>→ <span className="font-semibold text-purple-900">The End</span> is locked <span className="font-semibold">until later players&apos; discussion</span>. While The End is locked, players will not be able to craft <b>The Eye of Ender</b> and the crafting recipe for <b>Ender Chest</b> are changed (see more at Datapack Section below).</li>
+              <li>→ <span className="font-semibold text-red-600">The Nether</span> is locked for <span className="text-purple-700">one week</span> after the server starts.</li>
+              <li>→ <span className="font-semibold text-purple-900">The End</span> is locked <span className="text-purple-700">until later players&apos; discussion</span>. While The End is locked, players will not be able to craft <b>The Eye of Ender</b> and the crafting recipe for <b>Ender Chest</b> are changed (see more at Datapack Section below).</li>
             </ul>
           </div>
         </div>
 
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg">
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Server Datapacks</p>
-          <ul className="text-sm md:text-md font-light">
-            <li>- Théo&apos;s Survival+ (additional block of ore smelting)</li>
-            <li>- Armor Statues</li>
-            <li>- Cauldron Concrete</li>
-            <li>- Compass Coordinates</li>
-            <li>- Craftable Bundles (Leather)</li>
-            <li>- Custom Nether Portals</li>
-            <li>- Deep Mobs</li>
-            <li>- Double Shulker Shells</li>
-            <li>- Dragon Drops</li>
-            <li>- Fast Leaf Decay</li>
-            <li>- Graves</li>
-            <li>- Larger Phantoms</li>
-            <li>- More Mob Heads</li>
-            <li>- Player Head Drops</li>
-            <li>- Silence Mobs</li>
-            <li>- Technical Enchant+ (enabled after the server starts for one month)</li>
-            <li>- Track Raw Statistics</li>
-            <li>- Track Statistics</li>
-            <li>- Villager Death Messages</li>
-            <li>- Workstation Highlights</li>
-          </ul>
+
+          <div className="space-y-5">
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Théo&apos;s Survival+</li>
+              <ul>
+                <li>- Player cannot craft the eye of ender while The End is locked.</li>
+                <li>- The recipe of ender chest is changed to 7 obsidians, an ender pearl, and a blaze powder, instead of 8 obsidians and an eye of ender.</li>
+                <li>- Player can smelt block of iron ore, block of gold ore, and block of copper ore in blasting furnace.</li>
+                <li>- Player can see each others health bar below player&apos;s name.</li>
+                <li>- Player can see each others level in player list (tab) menu.</li>
+                <li>- Player can glow themselves to make visible through the walls by using command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger glow</code>.</li>
+                <li>- Player can put anything on their head by using command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger hat</code>.</li>
+                <li className="mt-2"><span className="font-semibold text-xs uppercase">Exclusive to Registered Members</span></li>
+                <li>- Player can put Heart effect decoration on their head by using <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger heart</code>.</li>
+                <li className="mt-2"><span className="font-semibold text-xs uppercase">Exclusive to Original Members</span></li>
+                <li>- Player can enable Breath joining sound effect decoration by using <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger breath</code>. </li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Armor Statues</li>
+              <ul>
+                <li>- Player can customize armor stand into whatever styles they want it to be.</li>
+                <li>- To customize armor stand, craft a book and quill, and name the book to <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">statues</code>. All available customizations are accessible via the book.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Cauldron Concrete</li>
+              <ul>
+                <li>- Throw concrete powders into a water cauldron to make concretes.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Compass Coordinates</li>
+              <ul>
+                <li>- Hold a compass in your hand to show coordinate in the action bar.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Craftable Bundles (Leather)</li>
+              <ul>
+                <li>- Add custom receipe for crafting a bundle.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Custom Nether Portals</li>
+              <ul>
+                <li>- Nether Portal can be built in different shapes.</li>
+                <li>- Nether Portal can be built by using the combination of obsidians and crying obsidians.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Deep Mobs</li>
+              <ul>
+                <li>- Zombies, Skeletons, Spiders, and Creepers are more powerful when you go deeper underground.</li>
+                <li>- Sometimes, Cave Spiders and Wither Skeletons can spawn in deep underground.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Double Shulker Shells</li>
+              <ul>
+                <li>- Shulker drops at least 2 shulker shells.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Dragon Drops</li>
+              <ul>
+                <li>- Ender Dragon always drops an ender egg and an elytra.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Fast Leaf Decay</li>
+              <ul>
+                <li>- Leaves from cut trees decay faster.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Graves</li>
+              <ul>
+                <li>- When player dies, they drop an item in the grave.</li>
+                <li>- Player can see their latest grave by using command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger graves</code>.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Larger Phantoms</li>
+              <ul>
+                <li>- Phantom grows bigger when player does not sleep for a long time.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">More Mob Heads</li>
+              <ul>
+                <li>- There is a chance that mobs drop their head when being killed.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Player Head Drops</li>
+              <ul>
+                <li>- Player drops their head when being killed by another player.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Silence Mobs</li>
+              <ul>
+                <li>- Mobs can be made silence by naming them <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">Silence</code> using name tag.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Technical Enchant+</li>
+              <ul>
+                <li className="text-red-500 font-semibold text-xs uppercase">This datapack will be enabled in later date by players&apos; discussion.</li>
+                <li>- Add bunches of new enchantments.</li>
+                <li>- See more <a className="underline text-blue-500" href="https://github.com/Frektip/Technical-Enchant-Renewed/wiki" target="_blank">here</a>.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Track Statistics / Track Raw Statistics</li>
+              <ul>
+                <li>- Track players' stats.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Villager Death Messages</li>
+              <ul>
+                <li>- Broadcast a message when villager dies.</li>
+              </ul>
+            </ul>
+
+            <ul className="font-light space-y-3 text-justify text-sm md:text-md">
+              <li className="font-semibold text-purple-700">Workstation Highlights</li>
+              <ul>
+                <li>- Aim at a villager and use command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger whs</code> to highlight the villager's workstation.</li>
+              </ul>
+            </ul>
+
+          </div>
         </div>
 
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg" style={{display: isRegistrationOpening ? "block" : "none"}}>
