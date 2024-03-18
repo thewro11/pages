@@ -92,7 +92,7 @@ export default function Svv2024() {
 
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg">
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Server Datapacks</p>
-          <ul className="text-sm md:text-md">
+          <ul className="text-sm md:text-md font-light">
             <li>- Théo&apos;s Survival+ (additional block of ore smelting)</li>
             <li>- Armor Statues</li>
             <li>- Cauldron Concrete</li>
