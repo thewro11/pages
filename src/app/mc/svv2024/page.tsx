@@ -225,7 +225,7 @@ export default function Svv2024() {
             <ul className="font-light space-y-3 text-justify text-sm md:text-md">
               <li className="font-semibold text-purple-700">Track Statistics / Track Raw Statistics</li>
               <ul>
-                <li>- Track players' stats.</li>
+                <li>- Track players&apos; stats.</li>
               </ul>
             </ul>
 
@@ -239,7 +239,7 @@ export default function Svv2024() {
             <ul className="font-light space-y-3 text-justify text-sm md:text-md">
               <li className="font-semibold text-purple-700">Workstation Highlights</li>
               <ul>
-                <li>- Aim at a villager and use command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger whs</code> to highlight the villager's workstation.</li>
+                <li>- Aim at a villager and use command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger whs</code> to highlight the villager&apos;s workstation.</li>
               </ul>
             </ul>
 
