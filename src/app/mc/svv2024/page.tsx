@@ -80,6 +80,7 @@ export default function Svv2024() {
               <li>→ Server difficulty of this server is <span className="text-purple-700">hard</span>. But it is not hard enough (trust me! 👌), so I decided to modify the difficulty by using datapacks (see more at Datapack Section below).</li>
               <li>→ This server has <span className="text-purple-700">friendly fire enabled</span>, so you could be able to poke your friends for fun 👀.</li>
               <li>→ Players cannot travel further than ±5000 blocks in x and z axis. This will be increased later if players have already explored major of the available area.</li>
+              <li>→ It requires 50% of online players to sleep in order to skip the night.</li>
             </ul>
             <ul className="font-light space-y-3 text-justify">
               <li className="font-bold text-purple-700">DIMENSION LOCKED</li>
@@ -99,10 +100,10 @@ export default function Svv2024() {
               <ul>
                 <li>- Player cannot craft the eye of ender while The End is locked.</li>
                 <li>- The recipe of ender chest is changed to 7 obsidians, an ender pearl, and a blaze powder, instead of 8 obsidians and an eye of ender.</li>
-                <li>- Player can smelt block of iron ore, block of gold ore, and block of copper ore in blasting furnace.</li>
+                <li>- Player can smelt block of iron ore, block of gold ore, and block of copper ore in blast furnace.</li>
                 <li>- Player can see each others health bar below player&apos;s name.</li>
                 <li>- Player can see each others level in player list (tab) menu.</li>
-                <li>- Player can glow themselves to make visible through the walls by using command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger glow</code>.</li>
+                <li>- Player can glow themselves to make visible through walls by using command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger glow</code>.</li>
                 <li>- Player can put anything on their head by using command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger hat</code>.</li>
                 <li className="mt-2"><span className="font-semibold text-xs uppercase">Exclusive to Registered Members</span></li>
                 <li>- Player can put Heart effect decoration on their head by using <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger heart</code>.</li>
@@ -136,7 +137,7 @@ export default function Svv2024() {
             <ul className="font-light space-y-3 text-justify text-sm md:text-md">
               <li className="font-semibold text-purple-700">Craftable Bundles (Leather)</li>
               <ul>
-                <li>- Add custom receipe for crafting a bundle.</li>
+                <li>- Add custom recipe for crafting a bundle.</li>
               </ul>
             </ul>
 
@@ -180,7 +181,7 @@ export default function Svv2024() {
             <ul className="font-light space-y-3 text-justify text-sm md:text-md">
               <li className="font-semibold text-purple-700">Graves</li>
               <ul>
-                <li>- When player dies, they drop an item in the grave.</li>
+                <li>- When player dies, they drop items in their grave.</li>
                 <li>- Player can see their latest grave by using command <code className="bg-gray-300 text-xs py-0.5 px-2 rounded-lg">/trigger graves</code>.</li>
               </ul>
             </ul>
@@ -216,7 +217,7 @@ export default function Svv2024() {
             <ul className="font-light space-y-3 text-justify text-sm md:text-md">
               <li className="font-semibold text-purple-700">Technical Enchant+</li>
               <ul>
-                <li className="text-red-500 font-semibold text-xs uppercase">This datapack will be enabled in later date by players&apos; discussion.</li>
+                <li className="text-red-500 font-semibold text-xs uppercase">This datapack will be enabled on later date by players&apos; discussion.</li>
                 <li>- Add bunches of new enchantments.</li>
                 <li>- See more <a className="underline text-blue-500" href="https://github.com/Frektip/Technical-Enchant-Renewed/wiki" target="_blank">here</a>.</li>
               </ul>
