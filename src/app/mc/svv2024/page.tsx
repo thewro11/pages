@@ -7,6 +7,7 @@ import { getForm } from "./libs/FirebaseDb";
 import { Form } from "./interfaces/form";
 
 import colors from './data/colors.json';
+import Countdown from "./components/Countdown";
 
 export default function Svv2024() {
   const [openFormModal, setOpenFormModal] = useState(false);
@@ -62,7 +63,12 @@ export default function Svv2024() {
       <div className="space-y-20">
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[35rem] bg-white rounded-2xl shadow-lg">
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Minecraft Survival 2024</p>
-          <p className="text-3xl md:text-6xl font-semibold uppercase my-16 text-center align-middle">COMING SOON</p>
+          <p className="text-3xl md:text-6xl font-semibold uppercase my-16 text-center align-middle">
+            <Countdown endDate={new Date(new Date("8 JUN 2024 20:00 GMT+7"))} ></Countdown>
+          </p>
+          <p className="text-sm md:text-xl font-semibold uppercase my-16 text-center align-middle">
+            Server starts on <span className="underline">June 8th, 2024 at 8PM</span>
+          </p>
         </div>
 
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg">
