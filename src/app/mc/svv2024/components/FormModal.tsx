@@ -225,6 +225,7 @@ export default function FormModal(formModalProps: {
             <div>
               <Label id="startDateProposal" required>Server Start Date</Label>
               <Datepicker
+                disabled
                 id="startDateProposal"
                 type="text" 
                 minDate={minDate} 
@@ -259,16 +260,6 @@ export default function FormModal(formModalProps: {
                   }
                 }}
               />
-              <Helper>
-                <b>Selectable between June 8th - 30th</b>
-              </Helper>
-              <Helper>
-                This is the date that you wish to start your journey on this server.
-                It may not be this date you selected as it will be taken to be considered along with others&apos; responses.
-              </Helper>
-              <Helper>
-                The exact server start date will be announced later.
-              </Helper>
             </div>
 
             <hr></hr>
