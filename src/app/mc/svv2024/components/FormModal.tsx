@@ -16,7 +16,7 @@ import { Color } from "../libs/Color";
 export default function FormModal(formModalProps: {
   openModal: boolean,
   onCloseModal: Function,
-  onComplete: Function,
+  onComplete?: Function,
 }) {
   const minDate = new Date(2024, 5, 8);
   const maxDate = new Date(2024, 5, 30);
@@ -103,7 +103,10 @@ export default function FormModal(formModalProps: {
     try {
       if (await saveForm(form, force)) {
         setOpenConfirmationModal(false);
-        formModalProps.onComplete();
+        
+        if (formModalProps.onComplete) {
+          formModalProps.onComplete();
+        }
       }
     } catch (e) {
       const error = e as Error;
@@ -184,6 +187,14 @@ export default function FormModal(formModalProps: {
                   })
                 }
               </Select>
+              { 
+                colors.filter(color => !selectedColors.includes(color)) &&
+                <Helper>
+                  <p>
+                    All colors have been chosen. Your selected color will always duplicate with others.
+                  </p>
+                </Helper>
+              }
             </div>
 
             <div>
@@ -272,7 +283,7 @@ export default function FormModal(formModalProps: {
               </Helper>
               <Helper>
                 <>
-                  Please contact Théo immediately if encounter any problems.
+                  Please contact Thewro immediately if encounter any problems.
                 </>
               </Helper>
             </div>

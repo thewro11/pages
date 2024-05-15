@@ -6,8 +6,8 @@ import CompleteModal from "./components/CompleteModal";
 import { getForm } from "./libs/FirebaseDb";
 import { Form } from "./interfaces/form";
 
-import colors from './data/colors.json';
 import Countdown from "./components/Countdown";
+import { useRouter } from "next/navigation";
 
 export default function Svv2024() {
   const [openFormModal, setOpenFormModal] = useState(false);
@@ -38,6 +38,8 @@ export default function Svv2024() {
       }
     )
   }
+  
+  const router = useRouter();
 
   useEffect(() => {
     getForms();
@@ -66,9 +68,22 @@ export default function Svv2024() {
           <p className="text-3xl md:text-6xl font-semibold uppercase my-16 text-center align-middle">
             <Countdown endDate={new Date(new Date("8 JUN 2024 20:00 GMT+7"))} ></Countdown>
           </p>
-          <p className="text-sm md:text-xl font-semibold uppercase my-16 text-center align-middle">
-            Server starts on <span className="underline">June 8th, 2024 at 8PM</span>
+          <p className="text-sm md:text-lg font-semibold uppercase my-16 text-center align-middle">
+            Server starts at <span className="underline">JUN 8th, 2024, 8PM (ICT)</span>
           </p>
+        </div>
+
+        <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg rb-div">
+          <p className="text-lg font-semibold uppercase mb-4 text-center">
+            <span className="text-purple-600">DragonKnighX</span> will be hosting the exclusive event before the server opening time.
+          </p>
+          <div className="flex justify-center">
+            <button 
+            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-2 focus:ring-purple-300 font-normal rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+            onClick={() => router.push('/mc/svv2024/events/guess-the-block')}>
+              CHECK IT OUT HERE!
+            </button>
+          </div>
         </div>
 
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg">
@@ -77,11 +92,11 @@ export default function Svv2024() {
             <ul className="font-light space-y-3 text-justify">
               <li className="font-bold text-purple-700">SERVER RULE</li>
               <li>→ Actually, there are no rules in this server. But I would like everyone to <span className="text-purple-700">respect each others and not harassing other players</span>.</li>
-              <li>→ Violation only results in <span className="text-purple-700 underline">PERMANENT BAN</span>.</li>
+              <li>→ Violation only results in <span className="text-purple-700">PERMANENT BAN</span>.</li>
             </ul>
             <ul className="font-light space-y-3 text-justify">
               <li className="font-bold text-purple-700">GENERAL INFO</li>
-              <li>→ Only registered players can join this server. Players who want to join after the server starts have to individually contact Théo and will be marked as guest.</li>
+              <li>→ Only registered players can join this server. Players who want to join after the server starts have to individually contact Thewro and will be marked as guest.</li>
               <li>→ This server is <span className="text-purple-700">vanilla</span>; there are no mods and resource packs required to play this server. You can install any client mods or resource packs that enhance your gaming experiences, <span className="text-purple-700">except cheating mods</span>.</li>
               <li>→ Server difficulty of this server is <span className="text-purple-700">hard</span>. But it is not hard enough (trust me! 👌), so I decided to modify the difficulty by using datapacks (see more at Datapack Section below).</li>
               <li>→ This server has <span className="text-purple-700">friendly fire enabled</span>, so you could be able to poke your friends for fun 👀.</li>
@@ -102,7 +117,7 @@ export default function Svv2024() {
 
           <div className="space-y-5">
             <ul className="font-light space-y-3 text-justify text-sm md:text-md">
-              <li className="font-semibold text-purple-700">Théo&apos;s Survival+</li>
+              <li className="font-semibold text-purple-700">Thewro&apos;s Survival+</li>
               <ul>
                 <li>- Player cannot craft the eye of ender while The End is locked.</li>
                 <li>- The recipe of ender chest is changed to 7 obsidians, an ender pearl, and a blaze powder, instead of 8 obsidians and an eye of ender.</li>
@@ -255,40 +270,15 @@ export default function Svv2024() {
 
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg" style={{display: isRegistrationOpening ? "block" : "none"}}>
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Registered Players</p>
-          <div className="relative overflow-x-auto">
-            <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                        <th scope="col" className="px-6 py-3">
-                            Name Prefix
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            Name Color
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            Minecraft Username
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                  {
-                    registeredPlayers.map(form => 
-                      <tr key={form.username} className="bg-white border-b">
-                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                            {form.prefix}
-                        </th>
-                        <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap" style={{color: colors.find(color => form.color === color.codeName)?.hexName}}>
-                            {colors.find(color => form.color === color.codeName)?.displayName}
-                        </td>
-                        <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                            {form.username}
-                        </td>
-                      </tr>
-                    )
-                  }
-                </tbody>
-            </table>
+          <div className="relative overflow-x-auto text-black font-semibold text-center">
+            There are {registeredPlayers.length} players registered to the server right now.
           </div>
+          <p className="text-3xl md:text-6xl font-semibold uppercase my-16 text-center align-middle">
+            <Countdown endDate={new Date(new Date("1 JUN 2024 20:00 GMT+7"))} ></Countdown>
+          </p>
+          <p className="text-sm md:text-lg font-semibold uppercase my-16 text-center align-middle">
+            The form closes at <span className="underline">JUN 1st, 2024, 8PM (ICT)</span>
+          </p>
         </div>
 
       </div>
