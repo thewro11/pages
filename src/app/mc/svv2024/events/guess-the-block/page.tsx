@@ -83,14 +83,14 @@ export default function GuessTheBlock() {
               </p>
               <div>
                 <p className="indent-4">
-                  Let's try!
+                  Let&apos;s try!
                 </p>
                 <ol className="list-decimal ml-4">
                   <li>
                     This block exists in Biome Plain.
                   </li>
                   <li>
-                    This block drops an item when being destroyed by player's bare hands.
+                    This block drops an item when being destroyed by player&apos;s bare hands.
                   </li>
                   <li>
                     This block drops different item when being destroyed by tools with Silk Touch.
