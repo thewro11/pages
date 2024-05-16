@@ -107,7 +107,7 @@ export default function GuessTheBlock() {
                 The answer is <span className="px-2 py-1 mx-0.5 text-center text-purple-800 hover:text-white bg-purple-800 rounded-md">Grass Block</span>.
               </p>
               <p className="indent-4">
-                (Guess correctly? If so, you pass to the next round. But beware, in the real event, you won’t get five hints from the start and you’ll have to be faster than your competitors!)
+                Guess correctly? If so, you pass to the next round. But beware, in the real event, you won’t get five hints from the start and you’ll have to be faster than your competitors!
               </p>
               <p className="indent-4">
                 In the final round, participants who get 3 scores first wins. 
@@ -134,7 +134,7 @@ export default function GuessTheBlock() {
             <p className="text-purple-700 text-2xl font-semibold uppercase mb-6 text-center">Rewards</p>
             <Image className="mx-auto my-6 rounded-3xl" src={"/pages/rewards.webp"} width={300} height={300} alt="rewards"></Image>
             <div className="space-y-6 text-sm md:text-md font-light text-justify leading-6">
-              <div className="mx-auto grid grid-cols-2 gap-2 max-w-[28rem] hidden">
+              <div className="mx-auto grid grid-cols-2 gap-2">
                 <div className="font-bold uppercase text-purple-700">
                   The winner
                 </div>
@@ -145,31 +145,31 @@ export default function GuessTheBlock() {
                   1st runner-up
                 </div>
                 <div className="font-bold">
-                  Chopsticks and Creeper Pin
+                  Chopsticks with Creeper Chopstick Base
                 </div>
                 <div className="font-bold">
                   2nd runner-up
                 </div>
                 <div className="font-bold">
-                  ???
+                  Steve-face Toy
                 </div>
                 <div>
                   4th place
                 </div>
                 <div>
-                  ???
+                  3-pack Tissue Set
                 </div>
                 <div>
                   5th place
                 </div>
                 <div>
-                  ???
+                  Zombie Villager Acrylic Stand
                 </div>
                 <div>
                   6th place
                 </div>
                 <div>
-                  Discord Nitro
+                  Discord Nitro <span className="text-gray-400">(Digital Rewards)</span>
                 </div>
               </div>
               <p>

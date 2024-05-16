@@ -8,6 +8,9 @@ import { Form } from "./interfaces/form";
 
 import Countdown from "./components/Countdown";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+
+import colors from "./data/colors.json"
 
 export default function Svv2024() {
   const [openFormModal, setOpenFormModal] = useState(false);
@@ -75,6 +78,13 @@ export default function Svv2024() {
 
         <div className="text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg rb-div">
           <p className="text-lg font-semibold uppercase mb-4 text-center">
+            <Image 
+              src={`https://mc-heads.net/avatar/DragonKnighX`} 
+              alt={"DragonKnighX Player Face"}
+              width={80}
+              height={80}
+              className="mx-auto mb-4"
+            />
             <span className="text-purple-600">DragonKnighX</span> will be hosting the exclusive event before the server opening time.
           </p>
           <div className="flex justify-center">
@@ -272,6 +282,22 @@ export default function Svv2024() {
           <p className="text-purple-700 text-2xl font-semibold uppercase mb-4 text-center">Registered Players</p>
           <div className="relative overflow-x-auto text-black font-semibold text-center">
             There are {registeredPlayers.length} players registered to the server right now.
+          </div>
+          <div className="grid grid-cols-4 md:grid-cols-6 gap-4 mt-4">
+            {
+              registeredPlayers.map((value, index) =>
+                <div className="text-center" key={index}>
+                  <Image 
+                    src={`https://mc-heads.net/avatar/${value.username}`} 
+                    alt={value.username + " Player Face"}
+                    width={40}
+                    height={40}
+                    className="mx-auto"
+                  />
+                  <span className="text-xs" style={{color:colors.find(e => e.codeName === value.color)?.hexName}}>{value.username}</span>
+                </div>
+              )
+            }
           </div>
           <p className="text-3xl md:text-6xl font-semibold uppercase my-16 text-center align-middle">
             <Countdown endDate={new Date(new Date("1 JUN 2024 20:00 GMT+7"))} ></Countdown>
