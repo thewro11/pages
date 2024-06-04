@@ -2,17 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: white;
-}
-
 @layer components {
   body {
-    @apply w-full h-max min-h-full bg-gradient-to-br from-[#3B0C59] to-[#0D0D0D];
+    @apply w-full h-max min-h-full bg-gradient-to-br from-[#3B0C59] to-[#0D0D0D] text-sm font-light text-justify leading-6 indent-4;
   }
 
   html {
     @apply bg-[#3B0C59] h-full;
+  }
+
+  main {
+    @apply pt-24 pb-24 space-y-20;
+  }
+
+  .box-sm {
+    @apply text-black px-12 py-12 mx-auto w-[95vw] md:w-[35rem] bg-white rounded-2xl shadow-lg;
+  }
+  
+  .box-lg {
+    @apply text-black px-12 py-12 mx-auto w-[95vw] md:w-[40rem] bg-white rounded-2xl shadow-lg;
+  }
+
+  h1 {
+    @apply text-purple-700 text-3xl font-bold uppercase mb-0;
+  }
+  
+  h2 {
+    @apply text-purple-700 text-2xl font-semibold uppercase mb-6;
+  }
+
+  h3 {
+    @apply text-black text-lg font-semibold uppercase mb-4;
+  }
+
+  h4 {
+    @apply text-black text-sm font-semibold uppercase mb-1;
+  }
+
+  h5 {
+    @apply font-bold text-purple-700;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  .countdown-wrapper {
+    @apply text-3xl md:text-5xl font-semibold uppercase my-16;
+  }
+
+  .spoiler {
+    @apply px-2 py-1 mx-0.5 text-center text-purple-800 hover:text-white bg-purple-800 rounded-md;
+  }
+
+  .info-box {
+    @apply space-y-3;
+  }
+
+  .hyperlink {
+    @apply underline text-blue-500;
+  }
+
+  .primary-btn {
+    @apply text-white bg-purple-700 hover:bg-purple-800 focus:ring-2 focus:ring-purple-300 font-normal rounded-lg text-sm px-5 py-2.5 focus:outline-none;
+  }
+
+  b {
+    @apply text-purple-700;
+  }
+
+  .nether {
+    @apply font-semibold text-red-600;
+  }
+
+  .the-end {
+    @apply font-semibold text-purple-900;
+  }
+
+  code {
+    @apply bg-gray-300 text-xs py-0.5 px-2 rounded-lg;
+  }
+
+  .warning-text {
+    @apply text-red-500 font-semibold text-xs uppercase;
   }
 
 }

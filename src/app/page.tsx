@@ -7,10 +7,10 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <main className="mx-auto w-[20rem] md:w-[40rem] lg:w-[60rem] pt-16 pb-16">
+    <main className="mx-auto w-[20rem] md:w-[40rem] lg:w-[60rem] pt-16 pb-16 text-white">
       <div className="md:flex mx-auto py-12 mb-12 bg-[#1A1040] shadow-lg rounded-3xl justify-center">
           <div className="flex justify-center">
-            <img alt="thewro11 profile image" src="https://avatars.githubusercontent.com/u/31770710" className="size-[6rem] rounded-full border" />
+            <Image alt="thewro11 profile image" src="https://avatars.githubusercontent.com/u/31770710" width='96' height='96' className="rounded-full border" />
           </div>
           <div className="flex flex-col justify-center font-bold">
             <span className="text-xl md:text-4xl mt-4 md:ml-8 text-center uppercase">Thiti Thaweesin</span>
