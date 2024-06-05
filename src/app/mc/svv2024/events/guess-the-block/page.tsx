@@ -36,10 +36,10 @@ export default function GuessTheBlock() {
             <h1>Guess the Block</h1>
             <h3>Minecraft Event</h3>
             <div className="countdown-wrapper">
-              <Countdown endDate={new Date("14 JUN 2024 18:00 GMT+7")} ></Countdown>
+              <Countdown endDate={new Date("14 JUN 2024 20:00 GMT+7")} ></Countdown>
             </div>
             <h3 className="mb-6">
-              Event starts at <span className="underline">14 JUN 2024 18:00 ICT</span>
+              Event starts at <span className="underline">14 JUN 2024 20:00 ICT</span>
             </h3>
           </div>
           <div className="text-center">

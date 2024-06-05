@@ -55,10 +55,10 @@ export default function Svv2024() {
             <div className="text-center">
               <h1>Minecraft Survival 2024</h1>
               <div className="countdown-wrapper">
-                <Countdown endDate={new Date("14 JUN 2024 20:00 GMT+7")} ></Countdown>
+                <Countdown endDate={new Date("14 JUN 2024 22:00 GMT+7")} ></Countdown>
               </div>
               <h3>
-                Server starts at <span className="underline">14 JUN 2024 20:00 ICT</span>
+                Server starts at <span className="underline">14 JUN 2024 22:00 ICT</span>
               </h3>
             </div>
           </div>
