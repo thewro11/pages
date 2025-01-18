@@ -1,32 +1,8 @@
 'use client';
 
-import { useEffect, useState } from "react";
-import FormModal from "../../components/FormModal";
-import { getForm } from "../../libs/FirebaseDb";
-import Countdown from "../../components/Countdown";
 import Image from "next/image";
 
 export default function GuessTheBlock() {
-
-  const [openFormModal, setOpenFormModal] = useState(false);
-  const [isRegistrationOpening, setRegistrationOpening] = useState(false);
-
-  const getForms = () => {
-    getForm().then(
-      (forms) => {
-        setRegistrationOpening(true);
-      }
-    )
-  }
-
-  useEffect(() => {
-    getForms();
-
-  }, []);
-
-  const onCloseFormModal = () => {
-    setOpenFormModal(false);
-  }
 
   return (
     <>
@@ -35,12 +11,6 @@ export default function GuessTheBlock() {
           <div className="text-center">
             <h1>Guess the Block</h1>
             <h3>Minecraft Event</h3>
-            <div className="countdown-wrapper">
-              <Countdown endDate={new Date("14 JUN 2024 20:00 GMT+7")} ></Countdown>
-            </div>
-            <h3 className="mb-6">
-              Event starts at <span className="underline">14 JUN 2024 20:00 ICT</span>
-            </h3>
           </div>
           <div className="text-center">
             <h4>Event Hosts</h4>
@@ -96,19 +66,6 @@ export default function GuessTheBlock() {
         </div>
 
         <div className="box-lg">
-          <h2 className="text-center">Eligibility</h2>
-          <div className="info-box">
-            <p>
-              Participants must register to Minecraft Survival 1.21 Form.
-            </p>
-            <p>
-              Participants must be present in <a className="hyperlink" href="https://discord.gg/VMwsxXHUpD" target="_blank">Grand Theater
-              </a> Discord Stage Channel by the time the event starts. Late participants are dismissed.
-            </p>
-          </div>
-        </div>
-
-        <div className="box-lg">
         <h2 className="text-center">Rewards</h2>
         <Image className="mx-auto my-6 rounded-3xl" src={"/pages/rewards.webp"} width={300} height={300} alt="rewards"></Image>
         <div className="info-box">
@@ -126,8 +83,6 @@ export default function GuessTheBlock() {
           </div>
         </div>
       </main>
-
-      <FormModal openModal={openFormModal} onCloseModal={onCloseFormModal}></FormModal>
     </>
   );
 }

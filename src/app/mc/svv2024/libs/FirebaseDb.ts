@@ -5,7 +5,7 @@ import { Form } from "../interfaces/form";
 import { duplicatedColor, duplicatedPrefix, duplicatedUsername } from "./ErrorMsg";
 
 import colors from "../data/colors.json";
-import { Color } from "./Color";
+import { Color } from "../interfaces/Color";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

@@ -11,7 +11,7 @@ import { getSelecteds, saveForm } from "../libs/FirebaseDb";
 import ConfirmationModal from "./ConfirmationModal";
 import { duplicatedColor, duplicatedPrefix, duplicatedUsername } from "../libs/ErrorMsg";
 import ErrorModal from "./ErrorModal";
-import { Color } from "../libs/Color";
+import { Color } from "../interfaces/Color";
 
 export default function FormModal(formModalProps: {
   openModal: boolean,

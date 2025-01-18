@@ -1,51 +1,20 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import FormModal from "./components/FormModal";
-import CompleteModal from "./components/CompleteModal";
-import { getForm } from "./libs/FirebaseDb";
 import { Form } from "./interfaces/form";
 
-import Countdown from "./components/Countdown";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 import colors from "./data/colors.json"
+import playerData from "./data/playerData.json"
 
 export default function Svv2024() {
-  const [openFormModal, setOpenFormModal] = useState(false);
-  const [openCompleteModal, setOpenCompleteModal] = useState(false);
-
-  const [isRegistrationOpening, setRegistrationOpening] = useState(false);
   const [registeredPlayers, setRegisteredPlayers] = useState([] as Form[]);
-
-  const onCloseFormModal = () => {
-    setOpenFormModal(false);
-  }
-
-  const onCloseCompleteModal = () => {
-    setOpenCompleteModal(false);
-  }
-
-  const onComplete = () => {
-    onCloseFormModal();
-    getForms();
-    setOpenCompleteModal(true);
-  }
-
-  const getForms = () => {
-    getForm().then(
-      (forms) => {
-        setRegisteredPlayers(forms);
-        setRegistrationOpening(true);
-      }
-    )
-  }
-  
   const router = useRouter();
 
   useEffect(() => {
-    getForms();
+    setRegisteredPlayers(playerData);
   }, []);
 
   return (
@@ -54,32 +23,34 @@ export default function Svv2024() {
           <div className="box-sm">
             <div className="text-center">
               <h1>Minecraft Survival 2024</h1>
-              <div className="countdown-wrapper">
-                <Countdown endDate={new Date("14 JUN 2024 22:00 GMT+7")} ></Countdown>
-              </div>
-              <h3>
-                Server starts at <span className="underline">14 JUN 2024 22:00 ICT</span>
-              </h3>
+              <h4 className="mt-8">This server has been shutdown</h4>
             </div>
           </div>
 
           <div className="box-lg">
-            <h3 className="text-center">
-              <Image 
-                src={`https://mc-heads.net/avatar/DragonKnighX`} 
-                alt={"DragonKnighX Player Face"}
-                width={80}
-                height={80}
-                className="mx-auto mb-4"
-              />
-              <span className="text-purple-600">DragonKnighX</span> will be hosting the exclusive event before the server opening time.
-            </h3>
-            <div className="flex justify-center">
-              <button 
-              className="primary-btn"
-              onClick={() => router.push('/mc/svv2024/events/guess-the-block')}>
-                CHECK IT OUT HERE!
-              </button>
+            <h2 className="text-center">Event Archives</h2>
+            <div className="space-y-8">
+              <ul className="space-y-3">
+                <h5>
+                  GUESS THE BLOCK
+                  <button 
+                    className="primary-btn ml-2 py-0.5 px-3"
+                    onClick={() => router.push('/mc/svv2024/events/guess-the-block')}>
+                      →
+                  </button>
+                  <span className="text-black font-normal ml-4">
+                    By
+                    <Image 
+                      src={`https://mc-heads.net/avatar/DragonKnighX`} 
+                      alt={"DragonKnighX Player Face"}
+                      width={20}
+                      height={20}
+                      className="ml-2 mr-1 inline-block"
+                    />
+                    DragonKnighX
+                  </span>
+                </h5>
+              </ul>
             </div>
           </div>
 
@@ -268,7 +239,7 @@ export default function Svv2024() {
             </div>
           </div>
 
-          <div className="box-lg" style={{display: isRegistrationOpening ? "block" : "none"}}>
+          <div className="box-lg">
             <div className="text-center">
               <h2 className="mb-0">Registered Players</h2>
               <h4>
@@ -293,9 +264,6 @@ export default function Svv2024() {
             </div>
           </div>
       </main>
-
-      <FormModal openModal={openFormModal} onCloseModal={onCloseFormModal} onComplete={onComplete}></FormModal>
-      <CompleteModal openModal={openCompleteModal} onCloseModal={onCloseCompleteModal}></CompleteModal>
     </>
   );
 }
