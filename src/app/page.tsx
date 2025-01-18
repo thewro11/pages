@@ -31,6 +31,16 @@ export default function Home() {
           Ongoing programs
         </span>
         <div className="flex justify-center">
+          None
+        </div>
+      </div>
+
+
+      <div>
+        <span className="flex justify-center mx-auto font-normal my-6 text-lg uppercase text-gray-300">
+          Archives
+        </span>
+        <div className="flex justify-center">
           <button 
             className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
             onClick={() => {
@@ -43,7 +53,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-
     </main>
   );
 }
